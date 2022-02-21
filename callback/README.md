@@ -8,6 +8,16 @@ VS2022、Windows SDK 10.0、C++14
 
 
 
+## 目录
+
+| 版本号 | 写入内存方式                      | VT查杀率 | 时间       | 火绒 | 360  | 腾讯 | 代码 |
+| ------ | --------------------------------- | -------- | ---------- | ---- | ---- | ---- | ---- |
+| 0.1    | uuid转化(UuidFromStringA)         | 4/68     | 2022-02-18 | √    | √    | √    | c++  |
+| 0.2    | base64+uuid转化(UuidFromStringA)  | 2/68     | 2022-02-18 | √    | √    | √    | c++  |
+| 0.3    | ipv6转化(RtlIpv6StringToAddressA) | 2/68     | 2022-02-21 | √    | √    | √    | c++  |
+
+
+
 ## 上手指南
 
  使用Cobalt Strike生成X64位的shellcode
@@ -51,6 +61,10 @@ python3 ./v0.2/trans.py
 先将shellcode转化为ipv6格式，客户端读取ipv6之后调用RtlIpv6StringToAddressA恢复成shellcode再通过回调函数加载至内存
 
 将shellcode替换至./v0.3/trans.py中的buf变量，并执行该脚本。(shellcode -> ipv6)
+
+```python
+python3 ./v0.3/trans.py
+```
 
 ![111](../images/image-callback-5.png)
 
