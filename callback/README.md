@@ -40,7 +40,21 @@ python3 ./v0.2/trans.py
 
 ![image-20220218193413454](../images/image-callback-3.png)
 
-将转换好的uuid，替换至./v0.2/main.cpp中的uuids_base64数组中
+将转换好的base64，替换至./v0.2/main.cpp中的uuids_base64数组中
+
+编译运行即可。
+
+
+
+### 版本0.3
+
+先将shellcode转化为ipv6格式，客户端读取ipv6之后调用RtlIpv6StringToAddressA恢复成shellcode再通过回调函数加载至内存
+
+将shellcode替换至./v0.3/trans.py中的buf变量，并执行该脚本。(shellcode -> ipv6)
+
+![111](../images/image-callback-5.png)
+
+将转换好的ipv6，替换至./v0.3/main.cpp中的ipv6数组中
 
 编译运行即可。
 
@@ -79,6 +93,10 @@ EnumSystemCodePagesW((CODEPAGE_ENUMPROCW)ha, 0);
 EnumDateFormatsA((DATEFMT_ENUMPROCA)ha, 0, 0);
 EnumChildWindows(NULL, (WNDENUMPROC)ha, 0);
 ```
+
+
+
+IPV6同uuid的原理，先将恶意payload转化成ipv6格式，再通过windows系统库函数去解析成shellcode，再去加载至内存，达到免杀效果。
 
 
 

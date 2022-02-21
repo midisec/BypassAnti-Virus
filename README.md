@@ -28,6 +28,9 @@
 * 新增UUID方式，通过回调函数加载shellcode（c++）
 * 新增BASE64编码+UUID方式，通过回调函数加载shellcode（c++）
 
+2022-02-21
+
+* 新增IPV6方式，通过回调函数加载shellcode（c++）
 
 
 
