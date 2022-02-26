@@ -97,7 +97,7 @@ python3 ./v0.4/trans.py
 
 ## 原理分析
 
-什么是UUID？  通用唯一标识符 ( Universally Unique Identifier )， 我们可以利用该机制将shellcode转化成uuid，并在运行程序时，将uuid重新转化成uuid，加载至内存。
+什么是UUID？  通用唯一标识符 ( Universally Unique Identifier )， 我们可以利用该机制将shellcode转化成uuid，并在运行程序时，将uuid重新转化成shellcode，加载至内存。
 
 什么是回调函数？  回调函数（callback）是一个通过函数指针来调用的函数。
 
