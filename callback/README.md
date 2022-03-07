@@ -16,6 +16,7 @@ VS2022、Windows SDK 10.0、C++14
 | 0.2    | base64+uuid转化(UuidFromStringA)     | 2/68     | 2022-02-18 | √    | √    | √    | c++  |
 | 0.3    | ipv6转化(RtlIpv6StringToAddressA)    | 2/68     | 2022-02-21 | √    | √    | √    | c++  |
 | 0.4    | mac转化(RtlEthernetStringToAddressA) | 3/67     | 2022-02-21 | √    | √    | √    | c++  |
+| 0.5    | ipv4转化(RtlIpv4StringToAddressA)    | 2/66     | 2022-03-07 | √    | √    | √    | c++  |
 
 
 
@@ -73,6 +74,8 @@ python3 ./v0.3/trans.py
 
 编译运行即可。
 
+
+
 ### 版本0.4
 
 将shellcode替换至./v0.4/trans.py中的buf变量，并执行该脚本。(shellcode -> mac)
@@ -82,6 +85,20 @@ python3 ./v0.4/trans.py
 ```
 
 将转换好的mac，替换至./v0.4/main.cpp中的mac_数组中
+
+编译运行即可。
+
+
+
+### 版本0.5
+
+将shellcode替换至./v0.5/trans.py中的buf变量，并执行该脚本。(shellcode -> ipv4)
+
+```python
+python3 ./v0.5/trans.py
+```
+
+将转换好的ipv4，替换至./v0.5/main.cpp中的mac_数组中
 
 编译运行即可。
 
