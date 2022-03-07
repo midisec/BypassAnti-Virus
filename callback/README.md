@@ -98,7 +98,7 @@ python3 ./v0.4/trans.py
 python3 ./v0.5/trans.py
 ```
 
-将转换好的ipv4，替换至./v0.5/main.cpp中的mac_数组中
+将转换好的ipv4，替换至./v0.5/main.cpp中的ipv4数组中
 
 编译运行即可。
 
