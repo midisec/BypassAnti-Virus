@@ -33,6 +33,9 @@
 * 新增[IPV6方式](https://github.com/midisec/BypassAnti-Virus/tree/main/callback/v0.3)，通过回调函数加载shellcode（c++）
 * 新增[MAC方式](https://github.com/midisec/BypassAnti-Virus/tree/main/callback/v0.4)，通过回调函数加载shellcode（c++）
 
+2022-03-07
+* 新增[IPV4方式](https://github.com/midisec/BypassAnti-Virus/tree/main/callback/v0.5)，通过回调函数加载shellcode（c++）
+
 
 
 ## 贡献者
