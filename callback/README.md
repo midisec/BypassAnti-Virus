@@ -142,7 +142,6 @@ EnumDateFormatsA((DATEFMT_ENUMPROCA)ha, 0, 0);
 EnumChildWindows(NULL, (WNDENUMPROC)ha, 0);
 
 EnumTimeFormatsW((TIMEFMT_ENUMPROCW)ha, NULL, NULL);
-EnumTimeFormatsW((TIMEFMT_ENUMPROCW)ha, NULL, NULL);
 EnumUILanguagesW((UILANGUAGE_ENUMPROCW)ha, NULL, NULL);
 EnumTimeFormatsEx((TIMEFMT_ENUMPROCEX)ha, NULL, NULL, NULL);
 EnumSystemLocalesW((LOCALE_ENUMPROCW)ha, NULL);
