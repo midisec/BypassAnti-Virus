@@ -127,7 +127,7 @@ int main()
 | 0.2    | base64+uuid转化(UuidFromStringA)+隐藏导入表     | 3/68     | 2022-07-10 | √    | √    | √    | c++  |
 | 0.3    | ipv6转化(RtlIpv6StringToAddressA)+隐藏导入表    | 6/68     | 2022-07-10 | √    | √    | √    | c++  |
 | 0.4    | mac转化(RtlEthernetStringToAddressA)+隐藏导入表 | 7/68     | 2022-07-10 | √    | √    | √    | c++  |
-| 0.5    | ipv4转化(RtlIpv4StringToAddressA)+隐藏导入表    | 17/68    | 2022-07-10 | √    | √    | √    | c++  |
+| 0.5    | ipv4转化(RtlIpv4StringToAddressA)+隐藏导入表    | 17/68    | 2022-07-10 | √    | X    | √    | c++  |
 
 
 
