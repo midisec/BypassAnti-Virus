@@ -13,7 +13,7 @@
 | 序号 | 免杀方式                                                     | VT查杀率(avg) | 时间       | 火绒 | 360  | 腾讯 | 代码实现 |
 | ---- | ------------------------------------------------------------ | ------------- | ---------- | ---- | ---- | ---- | -------- |
 | 1    | [回调函数（及改进）](https://github.com/midisec/BypassAnti-Virus/tree/main/callback) | 2/68          | 2022-02-18 | √    | √    | √    | c++      |
-| 2    |                                                              |               |            |      |      |      |          |
+| 2    | [隐藏导入表](https://github.com/midisec/BypassAnti-Virus/tree/main/hide_Import_tables) | 3/68          | 2022-07-10 | √    | √    | √    | c++      |
 | 3    |                                                              |               |            |      |      |      |          |
 
 
@@ -39,6 +39,10 @@
 2022-03-08
 
 * 新增13种[可利用的回调函数](https://github.com/midisec/BypassAnti-Virus/tree/main/callback#%E5%8F%AF%E5%88%A9%E7%94%A8%E7%9A%84%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0)加载shellcode（c++）
+
+2022-07-10
+
+* 通过[隐藏导入表的方式](https://github.com/midisec/BypassAnti-Virus/tree/main/hide_Import_tables)绕过部分敏感函数调用静态查杀（c++）
 
 
 
