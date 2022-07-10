@@ -13,7 +13,7 @@
 | 序号 | 免杀方式                                                     | VT查杀率(avg) | 时间       | 火绒 | 360  | 腾讯 | 代码实现 |
 | ---- | ------------------------------------------------------------ | ------------- | ---------- | ---- | ---- | ---- | -------- |
 | 1    | [回调函数（及改进）](https://github.com/midisec/BypassAnti-Virus/tree/main/callback) | 2/68          | 2022-02-18 | √    | √    | √    | c++      |
-| 2    | [隐藏导入表](https://github.com/midisec/BypassAnti-Virus/tree/main/hide_Import_tables) | 3/68          | 2022-07-10 | √    | √    | √    | c++      |
+| 2    | [隐藏导入表](https://github.com/midisec/BypassAnti-Virus/tree/main/hide_Import_tables) | 8/68          | 2022-07-10 | √    | √    | √    | c++      |
 | 3    |                                                              |               |            |      |      |      |          |
 
 
